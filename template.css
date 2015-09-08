@@ -1,0 +1,12 @@
+/*
+ * Created by: {{ program.name }} 
+ * Version: {{ program.version }}
+ * 
+ */
+{% for img in imgs %}
+.{{ img.name }} {
+	width: {{ img.w }}px;
+	height: {{ img.h }}px;
+	background: url({{ sprite.name }}) {{ img.offset_x }} {{ img.offset_y }};
+}
+{% endfor %}

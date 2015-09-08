@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>Template</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="generator" content="Geany 1.23.1" />
+	
+	<link type="text/css" rel="stylesheet" href="sprite.css">
+	
+	<!--
+	Created by: {{ program.name }} 
+	Version: {{ program.version }}
+	-->
+	
+	<style>
+		#navlist li {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			
+			top: 0;
+		}
+
+		#navlist li, #navlist span {
+			
+			
+			display: block;
+		}
+	</style>
+</head>
+
+<body>
+
+<ul id="navlist">
+	{% for img in imgs %}
+	<li class="{{ img.name }}"> <span>class="{{ img.name }}"</span></li>
+	{% endfor %}
+</ul>
+	
+</body>
+
+</html>
